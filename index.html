@@ -1,0 +1,48 @@
+<html>
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <title>Concepts - Project</title>
+    <style>
+        body{
+            background-color: #143d80;
+            }
+
+        .container {
+            margin: auto;
+            width: 60%;
+            border: 5px solid white;
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        p {
+        display: inline;
+        text-align:"center"
+        }
+        #demo {
+            color: red;
+        }
+    </style>
+ </head>
+ <body>
+    <div id="auto" class="container">
+    <p>Concepts Stock Current Price is: $</p>
+    <p id="demo"></p>
+ <!--some body-->
+    <script> 
+        var golangVar = "{{.}}"
+        console.log(golangVar);
+        document.getElementById("demo").innerHTML = golangVar;
+
+        setTimeout(function(){
+        window.location.reload(1);
+        }, 5000);
+    </script>
+</div>
+
+ </body>
+</html>
